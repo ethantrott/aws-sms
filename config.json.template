@@ -1,0 +1,6 @@
+{
+    "aws-id": "your-aws-key-id",
+    "aws-secret": "your-aws-key-secret",
+    "phone-number": "+1XXXXXXXXXX",
+    "region":"your-aws-region"
+}
