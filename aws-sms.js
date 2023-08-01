@@ -15,10 +15,18 @@ function send(message, phoneNumber){
   publishTextPromise.then(
     function(data) {
       console.log("MessageID is " + data.MessageId);
+      console.dir(data)
     }).catch(
       function(err) {
       console.error(err, err.stack);
     });
 }
 
-send("test", config['phone-number']);
+
+module.exports.send = send;
+
+/* 
+Example:
+  const sms = require("./aws-sms")
+  sms.send("message", "+1XXXXXXXXXX")
+*/
